@@ -5,14 +5,13 @@ public class OnlinePurchaseManager
   * instantiated in the constructor.
   */
   private ArrayList<Gizmo> purchases;
-  
+  purchases = new ArrayList<Gizmo>();
   /** Returns the number of purchased Gizmo objects that are electronic
   * whose manufacturer is maker, as described in part (a).
   */
   public int countElectronicsByMaker(String maker)
   {
     /* to be implemented in part (a) */
-    purchases = new ArrayList<Gizmo>();
     int total = 0;
     for(int i = 0; i < purchases.size(); i++){
       if(purchases.get(i).isElectronic() && purchases.get(i).getMaker().equals(maker)){
